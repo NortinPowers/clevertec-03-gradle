@@ -1,1 +1,3 @@
 rootProject.name = 'ClevertecUtils'
+include 'core'
+include 'api'
