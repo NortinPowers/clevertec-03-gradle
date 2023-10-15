@@ -41,3 +41,31 @@
 <p>Все методы описаны JavaDoc</p>
 
 ![JavaDoc](desc/java_doc.jpg)
+
+<h3> Выполнение дополнительных задач (api/core)</h3>
+<p>Созданы структуры core</p>
+
+![Структура](desc/core_structure.jpg)
+
+<p>и api</p>
+
+![Структура](desc/api_structure.jpg)
+
+<p>В виде следующих деревьев директорий</p>
+
+![Дерево](desc/core_tree.jpg)
+<p> </p>
+
+![Дерево](desc/api_tree.jpg)
+
+<p>Применены следующие настройки для jar в core</p>
+
+![Конфигурация_jar](desc/core_impl_jar.jpg)
+
+<p>Настройки .build для api</p>
+
+![Конфигурация_jar](desc/api_impl_core.jpg)
+
+<p>Тем самым обеспечены следующие зависимости</p>
+
+![Зависимости](desc/depen_structure.jpg)
