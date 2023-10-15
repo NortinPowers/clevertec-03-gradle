@@ -7,7 +7,7 @@ import by.clevertec.lesson.service.StringUtils;
 public class StringUtilsImpl implements StringUtils {
 
     /**
-     * Implementation of the method return true when input date is a positive number.
+     * Implementation of the method return true when input data is a positive number.
      *
      * @param str String input date
      * @return boolean result
