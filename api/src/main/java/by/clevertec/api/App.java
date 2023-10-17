@@ -4,17 +4,17 @@ import static by.clevertec.api.util.InputUtils.readStringLineFromConsole;
 import static by.clevertec.api.util.InputUtils.showResult;
 import static by.clevertec.api.util.InputUtils.splitData;
 
-import by.clevertec.core.Utils;
+import by.clevertec.core.Util;
 
 public class App {
 
     public static void main(String[] args) {
-        Utils utils = new Utils();
+        Util util = new Util();
 
-        boolean isAllPositiveNumbers = utils.isAllPositiveNumbers("12", "79");
+        boolean isAllPositiveNumbers = util.isAllPositiveNumbers("12", "79");
         showResult(isAllPositiveNumbers);
 
-        boolean isAllPositiveInputNumbers = utils.isAllPositiveNumbers(splitData(readStringLineFromConsole("Enter comma-separated numbers")));
+        boolean isAllPositiveInputNumbers = util.isAllPositiveNumbers(splitData(readStringLineFromConsole("Enter comma-separated numbers")));
         showResult(isAllPositiveInputNumbers);
     }
 }

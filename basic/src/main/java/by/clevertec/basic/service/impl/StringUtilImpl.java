@@ -1,10 +1,10 @@
-package by.clevertec.lesson.service.impl;
+package by.clevertec.basic.service.impl;
 
-import static by.clevertec.lesson.util.InputUtils.getPreparedString;
+import static by.clevertec.basic.util.InputUtil.getPreparedString;
 
-import by.clevertec.lesson.service.StringUtils;
+import by.clevertec.basic.service.StringUtil;
 
-public class StringUtilsImpl implements StringUtils {
+public class StringUtilImpl implements StringUtil {
 
     /**
      * Implementation of the method return true when input data is a positive number.

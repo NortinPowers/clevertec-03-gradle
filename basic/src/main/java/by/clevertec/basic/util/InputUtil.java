@@ -1,10 +1,10 @@
-package by.clevertec.lesson.util;
+package by.clevertec.basic.util;
 
 import java.util.Scanner;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
-public class InputUtils {
+public class InputUtil {
 
     private static final Scanner SCANNER;
     private static final String PRESS_ENTER = " and press Enter:";

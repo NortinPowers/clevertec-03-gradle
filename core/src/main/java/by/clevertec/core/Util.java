@@ -1,9 +1,9 @@
 package by.clevertec.core;
 
-import by.clevertec.lesson.service.StringUtils;
-import by.clevertec.lesson.service.impl.StringUtilsImpl;
+import by.clevertec.basic.service.StringUtil;
+import by.clevertec.basic.service.impl.StringUtilImpl;
 
-public class Utils {
+public class Util {
 
     /**
      * The method return true when all input data is a positive number.
@@ -12,7 +12,7 @@ public class Utils {
      * @return boolean result
      */
     public boolean isAllPositiveNumbers(String... str) {
-        StringUtils stringUtils = new StringUtilsImpl();
+        StringUtil stringUtils = new StringUtilImpl();
         for (String inputValue : str) {
             boolean isPositiveNumber = stringUtils.isPositiveNumber(inputValue);
             if (!isPositiveNumber) {

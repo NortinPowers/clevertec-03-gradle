@@ -1,6 +1,6 @@
-package by.clevertec.lesson.service;
+package by.clevertec.basic.service;
 
-public interface StringUtils {
+public interface StringUtil {
 
     /**
      * The method return true when input data is a positive number.
