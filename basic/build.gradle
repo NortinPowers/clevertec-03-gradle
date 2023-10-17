@@ -30,6 +30,15 @@ jar {
     }
 }
 
+tasks.register('jacocoReport', JacocoReport) {
+    dependsOn test
+
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
+
 jacocoTestCoverageVerification {
     violationRules {
         rule {
@@ -52,4 +61,3 @@ jacocoTestCoverageVerification {
 }
 
 test.finalizedBy jacocoTestReport
-jacocoTestReport.dependsOn test
