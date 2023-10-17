@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'jacoco'
 }
 
 group = 'by.clevertec.basic'
@@ -23,8 +24,32 @@ test {
 jar {
     archiveFileName = "utils-${version}.jar"
     manifest {
-        attributes 'Main-Class': 'by.clevertec.basic.Main',
+        attributes 'Main-Class': 'by.Main',
                 'Implementation-Title': 'utils',
                 'Implementation-Version': version
     }
 }
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = 'CLASS'
+            includes = ['by.clevertec.basic.impl.*']
+
+            limit {
+                minimum = 0.95
+            }
+        }
+
+        rule {
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 25
+            }
+        }
+    }
+}
+
+test.finalizedBy jacocoTestReport
+jacocoTestReport.dependsOn test
