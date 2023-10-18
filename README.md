@@ -79,3 +79,15 @@
 <p>Сменил имплементацию на базовый метод, для исключения необходимости билда при проверке проекта</p>
 
 ![КонфигCoreNew](desc/core_impl_base.jpg)
+
+<p>Добавил таску для плагина jacoco</p>
+
+![КонфигJacoco](desc/jacoco_task.jpg)
+
+<p>Настроил верификацию плагина jacoco</p>
+
+![КонфигJacocoVerif](desc/jacoco_verif_conf.jpg)
+
+<p>Получил отчет с охватом модуля basic тестами</p>
+
+![JacocoRep](desc/jacoco_rep.jpg)
