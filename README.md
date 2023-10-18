@@ -91,3 +91,22 @@
 <p>Получил отчет с охватом модуля basic тестами</p>
 
 ![JacocoRep](desc/jacoco_rep.jpg)
+
+<h4>Создание и добавление плагина</h4>
+<p>Так как плагин с отчетами хорош сам по себе и уже добавлен, то создал плагин на генерацию случайного числа</p>
+
+![PluginGroovy](desc/custom_plugin_groovy.jpg)
+
+<p>Расположил его в модуле buildSrc для автоматической компиляции и добавлении в classpath проекта</p>
+
+![Дерево](desc/buildSrc_tree.jpg)
+
+<p>Используя apply plugin: RandomNumberPlugin в build.gradle basic-модуля, получил в other таску</p>
+
+![ТаскаBasicPlugin](desc/basic_plugin_task.jpg)
+
+<p>И выполнил вручную, для проверки наделанного</p>
+
+![ТаскаBasicPluginResult](desc/task_result.jpg)
+
+<h3>Спасибо за внимание, хорошего дня!</h3>
