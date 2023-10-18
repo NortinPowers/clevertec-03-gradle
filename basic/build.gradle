@@ -61,3 +61,5 @@ jacocoTestCoverageVerification {
 }
 
 test.finalizedBy jacocoTestReport
+
+apply plugin: RandomNumberPlugin
