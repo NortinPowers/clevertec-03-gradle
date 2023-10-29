@@ -23,8 +23,10 @@ test {
 
 jar {
     archiveFileName = "utils-${version}.jar"
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+    from(configurations.runtimeClasspath.files.collect { zipTree(it) })
     manifest {
-        attributes 'Main-Class': 'by.Main',
+        attributes 'Main-Class': 'by.clevertec.basic.Main',
                 'Implementation-Title': 'utils',
                 'Implementation-Version': version
     }
